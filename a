@@ -1,0 +1,55 @@
+/*PRN: 22070123116
+Experiment_(a)
+*/
+
+#include<iostream>
+using namespace std;
+class date_check{
+    private:
+        int date,month,year;
+        bool yy;
+        char mm[]={
+            "Jan","Feb","March","May","June","July","August","Sept","Oct","Nov","Dec"
+        }
+    public:
+        void disp_date(){ 
+            cout<<"Enter any date: ";
+            cin>>date>>month>>year;
+            cout<<endl<<"The date is: "<<date<<"/"<<month<<"/"<<year;
+        }
+        bool leap_year_check(){
+            if(year%4==0 || year%100!=0&& year%400==100){
+                yy=true;
+                return yy;
+            }else{
+                yy=false;
+                return yy;
+            }
+        }
+        
+        void disp_month(){
+            cout<<endl<<mm[month-1];
+            if(yy==false){
+                if(month==1 ||)
+                
+            }
+        }
+        
+        void day_of_year(){
+            if(yy==true){
+                
+            }
+        }
+};
+int main(){
+    date_check d1;
+    d1.disp_date();
+    d1.leap_year_check();
+    d1.disp_month();
+    return 0;
+}
+
+/*OUTPUT
+Enter the height, breadth and lenght of the cube: 2 3 4
+The volume of the cube is: 24
+*/
